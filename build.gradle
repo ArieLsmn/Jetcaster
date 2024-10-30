@@ -21,11 +21,15 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        flatDir {
+            dirs './appsuit'
+        }
     }
 
     dependencies {
         classpath Libs.androidGradlePlugin
         classpath Libs.Kotlin.gradlePlugin
+        classpath 'com.stealien.appsuit.gradle:AppSuit-AndroidStudio-24.1.2'
     }
 }
 
