@@ -106,7 +106,7 @@
 				"display_name":"momo secure key",
 				"description":"momo secure key",
 				"component_type":"string",
-				"value":"jOKC2QAVFKfKMUkC",
+				"value":"uwOQiUIsauUvWv7o",
 				"required":true
 			},
 			{
@@ -114,7 +114,7 @@
 				"display_name":"momo secure iv",
 				"description":"momo secure iv",
 				"component_type":"string",
-				"value":"rIgziu4sVO0XdFNq",
+				"value":"UeTuSD3DhdMKjHEq",
 				"required":true
 			},
 			{
@@ -156,30 +156,6 @@
 				"component_type":"string",
 				"value":"a/a/x",
 				"required":false
-			},
-			{
-				"key":"triggered",
-				"display_name":"triggered",
-				"description":"if use secure handler, triggered call secure handler method",
-				"component_type":"string",
-				"value":"a/a/STLcn",
-				"required":true
-			},
-			{
-				"key":"triggered_timeout",
-				"display_name":"triggered timeout",
-				"description":"triggered method timeout",
-				"component_type":"int",
-				"value":10000,
-				"required":true
-			},
-			{
-				"key":"triggered_detailed",
-				"display_name":"secure handler error code level",
-				"description":"secure handler error code level",
-				"component_type":"boolean",
-				"value":true,
-				"required":true
 			},
 			{
 				"key":"pause",
