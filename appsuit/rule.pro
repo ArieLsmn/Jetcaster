@@ -1,5 +1,5 @@
 -logout_std
--no_remove_logging #배포 시 제외
+#-no_remove_logging #배포 시 제외
 
 # android standard
 -keep class android.** { *; }
@@ -15,7 +15,7 @@
 -keep class kotlin.** { *; }
 -keep class kotlinx.** { *; }
 
-# firebase rule 
+# firebase rule
 -keep class com.google.** { *; }
 -keepreflect class com.google.** { *; }
 -keepstrings class com.google.** { *; }
@@ -84,9 +84,10 @@ public void *(android.view.View);
 -use_d8
 -sync_lib_proguard_rules
 
-### ### ### 
-
 -dumpprofile proguard
 
-#-secure_handler_timeout 7777
-#-secure_handler com.rn72.MainActivity.showAppSuitDialog
+#-keep class io.flutter.** { *; }
+
+-secure_handler com.example.jetcaster.ui.AppSuitDialog.showHandlerDialog
+-secure_handler_timeout 10000
+-secure_handler_detail
